@@ -11,12 +11,15 @@ elBtn.addEventListener(("click"), function () {
 
 
     if ((result == "Ha") || (result == "ha")) {
-        elText.textContent = "Ajoyib!"
+        elText.textContent = "Ajoyib!";
+        elText.className = "green-block"
     }
     else if ((result == "Yo'q") || (result == "yo'q") || (result == "yoq")) {
-        elText.textContent = "Bu kitobni albatta o'qing!"
+        elText.textContent = "Bu kitobni albatta o'qing!";
+        elText.className = "blue-block";
     } else {
-        elText.textContent = "Notog'ri qiymat kiritildi!"
+        elText.textContent = "Notog'ri qiymat kiritildi!";
+        elText.className = "red-block" 
     }
 
 
@@ -51,7 +54,7 @@ elRandom.addEventListener(("click"), function () {
         if (arr[0] === book1){
             elBook.textContent = arr[0];
             elAfter.textContent = aff[0];
-            elRandom.textContent = "1-kitob";
+            elRandom.textContent = "3-kitob";
 
             arr[0]= arr[1];
             aff[0]=aff[1];
@@ -60,7 +63,7 @@ elRandom.addEventListener(("click"), function () {
         else if(arr[1]===book2){
             elBook.textContent =arr[1];
             elAfter.textContent = aff[1];
-            elRandom.textContent = "2-kitob";
+            elRandom.textContent = "4-kitob";
 
 
             arr[1]=arr[2];
@@ -71,7 +74,7 @@ elRandom.addEventListener(("click"), function () {
         else if(arr[2]===book3){
             elBook.textContent =arr[2];
             elAfter.textContent = aff[2];
-            elRandom.textContent = "3-kitob";
+            elRandom.textContent = "5-kitob";
 
 
             arr[2]=arr[3];
@@ -82,7 +85,7 @@ elRandom.addEventListener(("click"), function () {
         else if(arr[3]===book4){
             elBook.textContent =arr[3];
             elAfter.textContent = aff[3];
-            elRandom.textContent = "4-kitob";
+            elRandom.textContent = "6-kitob";
 
 
             arr[3]=arr[4];
